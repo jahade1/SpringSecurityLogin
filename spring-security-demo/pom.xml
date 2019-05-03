@@ -10,8 +10,9 @@
 	<name>spring-security-demo</name>
 
 	<properties>
-		<springframework.version>5.0.2.RELEASE</springframework.version>
-
+		<springframework.version>5.1.5.RELEASE</springframework.version>
+		 <springsecurity.version>5.1.4.RELEASE</springsecurity.version> 
+		
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -25,6 +26,23 @@
 			<version>${springframework.version}</version>
 		</dependency>
 
+		<!-- spring security -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+		<dependency>
+   			 <groupId>org.springframework.security</groupId>
+    		 <artifactId>spring-security-web</artifactId>
+   			 <version>5.1.4.RELEASE</version>
+		</dependency>
+		
+		<!-- spring security config-->
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+			<dependency>
+   				 <groupId>org.springframework.security</groupId>
+    			<artifactId>spring-security-config</artifactId>
+    			<version>5.1.4.RELEASE</version>
+			</dependency>
+		
+		
 		<!-- Servlet, JSP and JSTL support -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -51,6 +69,7 @@
 			<scope>test</scope>
 		</dependency>
 
+		
 	</dependencies>
 
 	<!-- TO DO: Add support for Maven WAR Plugin -->
